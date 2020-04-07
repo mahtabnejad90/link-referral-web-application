@@ -7,6 +7,13 @@
 
 **An example** would be user types and enters bbc.com then once clicked the user is given the next level of that webpage like: https://www.bbc.co.uk/news or https://www.bbc.co.uk/sport or https://www.bbc.co.uk/weather , then they have the second option to click on the link so that they can be redirected to that webpage.
 
+**Screenshots of app behaviour:**
+1) https://drive.google.com/file/d/1HGFkDxoFkzuyqqvLJ_kRThNp9rqyS_Fp/view?usp=sharing (initial landing page)
+2) https://drive.google.com/file/d/1kzH0FZcHANFErYlYZ3ahI3kF796QzleW/view?usp=sharing (user inputs valid URL with http/s prefix)
+3) https://drive.google.com/open?id=146S-RZYap267QxL4nIIywONb5n_bUPG1 (listing of top level links after user has entered a valid URL)
+4) https://drive.google.com/open?id=1HipsMR3yWSeOiAYmIHmWqzc4V953anlC (user inputs a invalid url without any http/s prefix)
+5) https://drive.google.com/open?id=12GmRKowF8eO5v6FA_PlMFWY8BfAMjVth (message returned to user after entered an invalid url)
+
 **Frameworks we're using:**
 * Ruby Rails
 * Cucumber
