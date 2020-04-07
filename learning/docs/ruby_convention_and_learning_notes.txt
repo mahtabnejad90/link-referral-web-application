@@ -1,0 +1,100 @@
+Ruby + other commands Commands:
+running ruby command: ruby filename.rb
+playground environment command for ruby: irb
+rails commands: rails server (to start web development localhost server)
+rake command: `rake` executes certain tasks and actions in most web development projects such as checking ruby code style (rake rubocop).
+Cucumber commands: `bundle exec cucumber` command executes a feature file..
+Gem commands: `bundle install` installs a list of gems specified in your gemfile. 
+
+notes:
+-in IRB environment nothing is preserved or saved
+-used for testing methods and operations.
+-can be opened via terminal through 'irb' command.
+-IRB is known as 'repl' which stands for read-evaluate-print-loop.
+-When nil is shown in the terminal, it means that ruby is not returning a mathematical operation back.
+-semicolon is not required for each statement. But if statements are in one line, semicolons are used to seperate them.
+-best practice is to exclude semi-colon and add each statement into a separate line.
+-string in ruby contains letters, numbers, special characters.
+-strings operated with integers, e.g. "3" + 4 will output an error.
+-puts method creates a line break everytime is defined.
+-difference between "puts" & "print"
+  >puts adds a line break
+  >print doesn't add a line break or space when defined twice
+-p method outputs literal methods. more detailed output compared to "puts" & "print" method.
+  >When string is defined in puts the actual string quotes are printed whereas in print or puts, that is not the case.
+  >For integer outputs, there is no difference between p or puts.
+-Decimal components are not going to be returned when the arithmetic operation is based on integer values.
+-To make output a decimal value, make sure value has at least one floating value when creating the operation e.g. 12.0 / 5
+-to calculate exponents users must use p number ** number. e.g. 2 ** 2 (2*2*2*2)
+-modular symbol returns the remainder of the operation
+-for numbers below 0, ruby requires '0' to be present at the front of the value. e.g. user cannot input .5, they have to define the value as 0.5
+-Comments in ruby:
+  -single line comments start with "#"
+  -block comment begins with "=begin" and ends with "=end"
+  -selection of code and tapping command+/ to comment out the code selection
+-variables can be pointed to different types, hence ruby is dynamic
+-For parallel variable assignment, ruby will take the variables from the left side of the equals sign and point them to the right side of the equal sign.
+-Ruby does not throw an error if there is an additional variable on the left or an object on the right that should not be there, it just ignores it.
+-when printing out the variables, ruby first runs the right side of the equals sign. If variable objects are swapped, ruby will find the values of the recent declared values of those variables and store them in sequence, ruby will evaluate the right side, then reassign the variables on the left side of the equals to the results to the right.
+-To initialise a constant variable, the definition must be in all uppercase letters.
+-Constant can be manipulated to a different value, however ruby will throw warnings that it is not recommended.
+-Objects have methods, which instruct objects to execute a command. Objects may have exclusive & shared methods depending on the object type. Certain commands an integer can do whereas a string cannot.
+-To call or invoke a method an '.' needs to placed after the object of that variable.
+-typical methods for strings; .downcase .length .upcase
+-you can add methods to variables only as well , e.g p testVariable.length
+-.next increments by one
+-nil exists as an object to represent nothing or null.
+-when printing nil "puts nil" the first output is a blank string. Final return value of each operation in puts will be nil.
+-using p method for nil will actually output the string "nil"
+-irb "playground for ruby"
+-".to_s" converts a integer to string
+-simplified method of string interpolation, no need to add the to string method, because the #{} method interpolation rather than converts something into a string
+- "gets" method is used to get string from user input. e.g. name = gets
+-gets.chomp is also method chaining, so it first gets the input from user input then call the chomp method. Different methods after each other
+-to_i method converts string into an Integer.
+-Integer is a whole number.
+-a class method is a method that all object types share.
+-BigNum & Fixnum classes are now unified in to an Integer class.
+-From float to integer, the decimal point will be removed rather than rounded up
+-When user want to check if something is true or false they would have to print 'p 5<10' for example to get the boolean output
+-Comparison operators in ruby: '==' is comparing if both objects/values are equal.
+-Can compare strings and integers together as well with the comparison operator.
+-if a float number is the exact value of an integer then ruby will return true.
+-Inequality operator is '!=' which is also defined as not not equals.
+-Any result from operators will be in boolean value.
+-Case sensitivity takes in matter when comparing strings
+-Less than or greater than operators : > < >= <=
+-method calls can be with or without parentheses. Ruby convention is to use method calls without parentheses.
+-when calling a method with a parantheses, the value within the parantheses determines the output.
+-.div & .modulo are methods that are special to division and modular arithmetic methods.
+-Methods on objects can accept more than one input, a parameter is also known as an argument.
+-Between? method expects two inputs in the argument.
+-Example of between? method. 4.between?(1, 5) . the method on the left specifies if 4 is between 1 & 5, and if that is the case, the output should return true.
+-When adding the .to_i method to a float object, ruby will remove the decimal point plus the value and transform it into an integer.
+-.floor method rounds down the float number to the lowest integer.
+-.round with arguments will round to the digits inserted in the arguments.
+-.round method would to the nearest 10. if a .5 decimal point is rounded using the round method, it will round to the next digit.
+-.abs (absolute method) method always returns a positive method.
+-types of assignments "Object = 50, Object = Object + 50, Object += 50", other arithmetic operators are used in the same format for assignments and reassignments.
+-times is a method that executes a certain process a certain number of times. Times method is also used as a loop, to execute it you add the .times method to the object and add the process in the block with curly braces. Used in one line code
+-do end is used for multiple lines of code, it is added after the .times method.
+-blocks can also use "block variables", temporary variable that will represent something in the context of that process execution, not used outside the class.
+-Downto method counts down to a specific value specified in the argument.
+-the step method takes a block.
+-Step method is used on number variables. In the arguments of the step method, you would input what the value it has to go up to, so step enables the user to define the size of the increment. The second argument (after the comma) is the steps taken to get to that final value and in what sequence.
+-Step method requires blocks in order to tell ruby what to do and what to output. The use of the curly braces and pipes in the curly braces outputs the sequence.
+-Difference between step and upto, step is used in order to create a custom sequence whereas the upto method is more logical and short in terms of syntax.
+-The new method can be used on a string class in order to create a new string variable or instance of a string. In professional ruby code, the normal syntax is used to create string, the new method is just another way of creating string.
+-A multiline string includes multiple line or line breaks of a string.
+-A multiline comments begins with: <<anyTextMustGoHere -----Input Characters in any form----- anyTextMustGoHere
+-to use double quotes within double quotes, an escape character is required in order to avoid any crashes or ruby errors. \"\" is the example of how they're used.
+-In single quotes, line breaks and interpolations cannot be used. Therefore double quotes are used more often in ruby code.
+-When using the == operator casing matter, e.g. if a character is capitalise the == operator will detect that.
+-When comparing two strings using the less than or greater than operator, the interpreter alphabetically sorts out the two strings so if a is less than be, then true would be returned.
+-For alphabetical character, upper case comes first then lower case.
+-.concat() method is used to concatenate strings. There are also different methods to concatenate by adding two strings together. .concat() permanently overwrites the string.
+-Pre-pend method Switches string variables. so if a was before b, and pre pend method was used, then b would as the first variable then a would be the variable after it.
+- concat methods: plus operator, concat method, prepend method, shovel operator
+-.length method returns the number of characters in a string variable. .size is the same method, they perform the exact same option. .class method can be called after the .length/.size method is called.
+-To extract characters from a string through indexing, we need to use the square brackets, e.g variable_name[#indexnumber]. if you include a negative number value (e.g. -2), then it will extract the character in reverse.
+-.slice() method is identical with the square method.

@@ -1,0 +1,36 @@
+# Link Referal App
+
+* This is a ruby language based project which consists of a web application that takes in web page link. Further on, we would be using the cucumber-capybara & selenium for rails to test this simple web application....
+
+**User experience details:**
+* User is to enter a name of a webpage and it's designated url, then submit the form. Once the form is submitted, then a link row is created for the url and its name. Once the url is clicked, the user is then presented with a list of first child url webpages, the user also has a second option to be redirected to the webpage as well in a new tab/window.. 
+
+**An example** would be user types and enters bbc.com then once clicked the user is given the next level of that webpage like: https://www.bbc.co.uk/news or https://www.bbc.co.uk/sport or https://www.bbc.co.uk/weather , then they have the second option to click on the link so that they can be redirected to that webpage.
+
+**Frameworks we're using:**
+* Ruby Rails
+* Cucumber
+* Capybara
+* RSPEC
+
+**Steps on how to start the app**
+1) make sure you download and run the postgres client app for the database creating and migration.
+2) run ```bundle install``` to install the gems specified in the GEMFILE
+3) run ```rake db:create``` to create the database in the postgres client app, you'll see an update in the postgres client app of the link referall app database showing up.
+4) run ```rake db:migrate``` to migrate any change (if there are any)
+5) run ```rails server``` to start the local server on port 4000 (by default), 
+6) open up the browser and enter localhost:4000
+7) web page should pop up
+
+## Documentation
+-In the repo, we have a docs folder which includes two text files of ruby principles and designs as well as learning notes. The ruby_convention_and_learning_notes.txt file will always be updated with new notes in regards to ruby programming. I've also added a playground directory within the learning directory which includes a list of practice ruby coding that I did through udemy tutorial.
+
+**Links, Resources & Tutorials Used:**
+* codemy.com: ruby on rails: to do list app course - used the basic RoR project setup tutorial and basic database and user input forms to start the project.
+* Udemy.com: Learn to Code with Ruby course - used course to learn ruby design, conventions and concepts of programming in ruby.
+* https://madeintandem.com/blog/setting-up-rspec-and-capybara-in-rails-5-for-testing/ - Setting up capybara & rspec for project
+* https://medium.com/@rainerborene/7-ways-to-encode-urls-in-ruby-c15078a7d6bc - How to encode string to URL
+* https://github.com/cucumber/cucumber-rails - setting up cucumber in project
+* https://github.com/teamcapybara/capybara#using-capybara-with-cucumber - Using capybara with cucumber
+* https://rubygems.org/ - Cherry picking gems required to be installed in project.
+* https://stackoverflow.com/questions/34882796/ruby-nokogiri-open-uri-fail-to-parse-page & http://ruby.bastardsbook.com/chapters/html-parsing/ - used this to find out how to use nokogiri and open-uri to open a webpage.

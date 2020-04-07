@@ -1,0 +1,9 @@
+
+Design Principles:
+
+- High level programming language. Designed to be readable by humans, converts to the lower level machine code so computers are able to process.
+- Ruby is an interpreted languages therefore it isn't required for it to be compiled. Executed at run-time, e.g. when you run a file, thats when ruby runs through the file and executes commands, where as languages like java require code to be compiled before running a file. Could be a disadvantage as program/file may crash if there is a bug or error in the code whilst running.
+- Ruby code is read top-to-bottom.
+- The program that runs ruby code is called; interpreter.
+- Ruby on rails is an extension of ruby programming language mostly used for web development.
+- Everything in ruby programming is an object. Attributes (characteristics of an object) & methods (what actions an object can do).

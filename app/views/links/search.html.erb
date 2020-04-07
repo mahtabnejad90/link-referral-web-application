@@ -1,0 +1,24 @@
+<%= form_tag("/links/listing", method: "post") do %>
+  <div class="form-group">
+    <%= text_field_tag "url", nil, class: "form-control form-control-sm", id: "searchInput", placeholder: 'Please enter a valid URL', required: true %>
+    <small class="form-text text-muted">
+      <%= @base_url.present? ? (validate_url @base_url) ? nil : 'Please enter a valid URL.' : nil %>
+    </small>
+  </div>
+  <%= submit_tag("Search", class: "btn btn-sm btn-primary") %>
+<% end %>
+
+<% if @valid_links.present? %>
+  <div>
+    <br />
+    <h6>Entered URL: <%= link_to @base_url, @base_url%> </h6>
+    <h6>Website Title: <%= @url_title %></h6>
+    <h6>Top Level Links:  <%= @valid_links.count %> </h6>
+      
+    <ol>
+      <% @valid_links.each do |link| %>
+        <li><%= link_to link, link %></li>
+      <% end %>
+    </ol>
+  </div>
+<% end %>
