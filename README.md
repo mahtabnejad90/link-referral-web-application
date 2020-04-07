@@ -23,8 +23,8 @@
 **Steps on how to start the app**
 1) make sure you download and run the postgres client app for the database creating and migration.
 2) run ```bundle install``` to install the gems specified in the GEMFILE
-3) run ```rake db:create``` to create the database in the postgres client app, you'll see an update in the postgres client app of the link referall app database showing up.
-4) run ```rake db:migrate``` to migrate any change (if there are any)
+3) run ```rake db:create``` to create the database in the postgres client app, you'll see an update in the postgres client app of the link referall app database showing up. If you've done this for the first time on your machine, you don't need to do it the second time, instead skip to step 4.
+4) run ```rake db:migrate``` to migrate any change.
 5) run ```rails server``` to start the local server on port 4000 (by default), 
 6) open up the browser and enter localhost:4000
 7) web page should pop up
