@@ -19,6 +19,7 @@
 * Cucumber
 * Capybara
 * RSPEC
+* Selenium Webdriver (Run tests on browser)
 
 **Steps on how to start the app**
 1) make sure you download and run the postgres client app for the database creating and migration.
