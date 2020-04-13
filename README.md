@@ -34,7 +34,7 @@
 1) make sure you have the Chrome webdriver installed in the correct path.
 2) After the gems have been successfully installed
 3) Run the application successfully (follow the 'Steps on how to start the app' section)
-3) run the following command: ```cucumber bundle exec /features/features/links.feature``` (specify :NUMBER if you want to run a specific scenario or line)
+3) run the following command: ```bundle exec cucumber /features/features/links.feature``` (specify :NUMBER if you want to run a specific scenario or line)
 
 ## Documentation
 -In the repo, we have a docs folder which includes two text files of ruby principles and designs as well as learning notes. The ruby_convention_and_learning_notes.txt file will always be updated with new notes in regards to ruby programming. I've also added a playground directory within the learning directory which includes a list of practice ruby coding that I did through udemy tutorial.
