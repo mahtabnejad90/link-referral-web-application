@@ -42,3 +42,5 @@
 * https://github.com/teamcapybara/capybara#using-capybara-with-cucumber - Using capybara with cucumber
 * https://rubygems.org/ - Cherry picking gems required to be installed in project.
 * https://stackoverflow.com/questions/34882796/ruby-nokogiri-open-uri-fail-to-parse-page & http://ruby.bastardsbook.com/chapters/html-parsing/ - used this to find out how to use nokogiri and open-uri to open a webpage.
+* https://www.rubydoc.info/github - index of rspec, capybara and ruby documentation.
+* https://devhints.io/capybara - capybara cheatsheet.
