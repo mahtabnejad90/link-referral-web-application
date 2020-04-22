@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/features/features/links.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/features/links.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/step_definitions/links.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/links.rb" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +15,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aUeSkUl33XhQ96OtMWPMdR757B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -32,18 +36,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,6 +47,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586794601956</updated>
       <workItem from="1586794603443" duration="2555000" />
+      <workItem from="1587546610374" duration="471000" />
+      <workItem from="1587548491103" duration="2085000" />
+      <workItem from="1587551026146" duration="3074000" />
     </task>
     <servers />
   </component>
@@ -66,10 +61,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1300" y="252" key="NewModule_or_Project.wizard" timestamp="1587546650567">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1300" y="252" key="NewModule_or_Project.wizard/-3712.23.1792.1097/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587546650567" />
+    <state x="770" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1587551025450">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="770" y="384" key="com.intellij.ide.util.TipDialog/-1792.23.1792.1097/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1587551025450" />
+    <state x="-1150" y="384" key="com.intellij.ide.util.TipDialog/-3712.23.1792.1097/-1920.23.1920.1057/0.23.1920.1057@-1920.23.1920.1057" timestamp="1587546614819" />
   </component>
 </project>

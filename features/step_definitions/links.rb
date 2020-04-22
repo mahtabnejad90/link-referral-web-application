@@ -25,15 +25,17 @@ end
 
 #This step definition check if the user enters the correct URL. Expect is a rspec matcher
 # to   expect(page).to have_link()  is a capybara method, refer to https://devhints.io/capybara
-Then(/^System checks to see URL is valid$/) do
+Then(/^system checks to see URL is valid$/) do
   expect(page).to have_link(valid_url, href: valid_url)
 end
 
 #have_content is a capybara method that contains a content specified in the arguments.
-Then(/^System checks to see URL is invalid$/) do
+Then(/^system checks to see URL is invalid and returns an error$/) do
   expect(page).to have_content('Please enter a valid URL.')
 end
 
-Then(/^The user sees the top level URLS$/) do
-  #TBC
+#capyara method that asserts and verifies top links with the valid_url as it's placeholder
+Then(/^user finds the top-links$/) do
+  regex = /#{valid_url}\/.*$/
+  expect(page).to have_xpath("//a", :text => regex)
 end
