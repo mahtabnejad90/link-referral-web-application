@@ -30,7 +30,10 @@
 6) open up the browser and enter localhost:4000
 7) web page should pop up
 
-Note: you may have run into an issue with the pg gem installing, if that is the case, then you need to configure the postgres pg config path which is located in application, alternatively you can run the following command with your user path: ```gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config```
+***Notes:*** 
+you may have run into an issue with the pg gem installing, if that is the case, then you need to configure the postgres pg config path which is located in application, alternatively you can run the following command with your user path: ```gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config```
+
+You may also come across an issue with the postgres client app in which you will not be able to start the database server because of a port 5432 in use error, this means that an instance of postgres running, run the following commands and steps to fix it: ```sudo launchctl list``` or ```sudo launchctl list | fgrep postg``` (second command returns only postgres PID and label which is what we want) then copy the label/name from terminal and run the following command ```sudo launchctl stop <name/label>```. Once that's done, you may restart the postgres client app and you'll see the servers running smoothly. 
 
 **How to run cucumber tests**
 1) make sure you have the Chrome webdriver installed in the correct path.
