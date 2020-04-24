@@ -13,6 +13,11 @@ Feature: Test top level URLs returned by users input
       And the user clicks the on the search button
       Then system checks to see URL is invalid and returns an error
 
+    Scenario: User enters a invalid URL in the input
+      When the user enters an empty url
+      And the user clicks the on the search button
+      Then system checks to see URL is empty and returns an error dialog
+
      Scenario: User is returned with top level urls once valid url is entered
       When the user enters a valid URL
       And the user clicks the on the search button

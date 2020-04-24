@@ -17,6 +17,10 @@ When (/^the user enters an invalid URL$/) do
   fill_in 'url', :with => invalid_url
 end
 
+When (/^the user enters an empty url$/) do
+  fill_in 'url', :with => empty_url
+end
+
 #click_button is a capyara action
 And(/^the user clicks the on the search button$/) do
   click_button("commit")
@@ -27,6 +31,10 @@ end
 # to   expect(page).to have_link()  is a capybara method, refer to https://devhints.io/capybara
 Then(/^system checks to see URL is valid$/) do
   expect(page).to have_link(valid_url, href: valid_url)
+end
+
+Then(/^system checks to see URL is empty and returns an error dialog$/) do
+  expect(page).to have_content('Please fill in this field.')
 end
 
 #have_content is a capybara method that contains a content specified in the arguments.
